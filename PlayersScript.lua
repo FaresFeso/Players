@@ -20,7 +20,7 @@ end)
 
 local PlayersSection = Players:NewSection("Fly For Mobile")
 
-Section:NewToggle("Fly For Mobile", "Turn On/off To Enable/Disable Fly", function(state)
+PlayersSection:NewToggle("Fly For Mobile", "Turn On/off To Enable/Disable Fly", function(state)
     if state then
         repeat wait()
 until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
@@ -188,7 +188,7 @@ end)
 
 local PlayersSection = Players:NewSection("Fly For Pc")
 
-Section:NewKeybind("Fly For Pc", "Click F To Enable/Disable Fly", Enum.KeyCode.F, function()
+PlayersSection:NewKeybind("Fly For Pc", "Click F To Enable/Disable Fly", Enum.KeyCode.F, function()
 	repeat wait()
 until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
 local mouse = game.Players.LocalPlayer:GetMouse()
