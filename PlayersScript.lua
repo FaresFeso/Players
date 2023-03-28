@@ -20,29 +20,16 @@ end)
 
 local PlayersSection = Players:NewSection("Fly For Mobile")
 
-PlayersSection:NewToggle("Fly", "Turn it on or off to fly", function(state)
+Section:NewToggle("Fly For Mobile", "Turn On/off To Enable/Disable Fly", function(state)
     if state then
-        local fly_Players = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))()
-
-fly_Players(true) -- Change "true" To "false" to disable Fly
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua?token=GHSAT0AAAAAACAUNQL5CWOCMGXGEH4NDDEEZBCIYUA"))()
     else
-       local fly_Players = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))()
-
-fly_Players(false) -- Change "true" To "false" to disable Fly
-
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua?token=GHSAT0AAAAAACAUNQL5CWOCMGXGEH4NDDEEZBCIYUA"))()
     end
 end)
 
 local PlayersSection = Players:NewSection("Fly For Pc")
 
-
-PlayersSection:NewKeybind("F To Fly", "NOMNOMNOM", Enum.KeyCode.F, function()
-	local fly_ThisCanBeNamedAnything = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))()
-
-fly_ThisCanBeNamedAnything(true) -- Change "true" To "false" to disable Fly
-end)
-
-
-PlayersSection:NewKeybind("Close/Open", "Click Ctrl To Open/Close The Gui", Enum.KeyCode.Ctrl, function()
-	Library:ToggleUI()
+Section:NewKeybind("Fly For Pc", "Click F To Enable/Disable Fly", Enum.KeyCode.F, function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua?token=GHSAT0AAAAAACAUNQL5CWOCMGXGEH4NDDEEZBCIYUA"))()
 end)
