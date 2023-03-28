@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("SoloX.0.3", "BloodTheme")
+local Window = Library.CreateLib("Fares.0.1", "BloodTheme")
 
 -- Players
 local Players = Window:NewTab("Players")
@@ -22,14 +22,14 @@ local PlayersSection = Players:NewSection("Fly For Mobile")
 
 Section:NewToggle("Fly For Mobile", "Turn On/off To Enable/Disable Fly", function(state)
     if state then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua?token=GHSAT0AAAAAACAUNQL5CWOCMGXGEH4NDDEEZBCIYUA"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua"))()
     else
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua?token=GHSAT0AAAAAACAUNQL5CWOCMGXGEH4NDDEEZBCIYUA"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua"))()
     end
 end)
 
 local PlayersSection = Players:NewSection("Fly For Pc")
 
 Section:NewKeybind("Fly For Pc", "Click F To Enable/Disable Fly", Enum.KeyCode.F, function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua?token=GHSAT0AAAAAACAUNQL5CWOCMGXGEH4NDDEEZBCIYUA"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/FaresFeso/Players/main/fly.lua"))()
 end)
