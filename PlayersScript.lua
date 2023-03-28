@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Fares.0.1", "BloodTheme")
+local Window = Library.CreateLib("SoloX.0.3", "BloodTheme")
 
 -- Players
 local Players = Window:NewTab("Players")
